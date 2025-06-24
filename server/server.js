@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // ✅ Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/visaDB", {
+mongoose.connect("mongodb+srv://sarathibalaji2037:UMfME6XGBAdLhW9s@cluster0.4qf60uc.mongodb.net/?retryWrites=true&w=majority&appName=visaDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
