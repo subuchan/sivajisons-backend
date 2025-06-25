@@ -9,7 +9,12 @@ app.use(express.json());
 require('dotenv').config();
 const PORT = process.env.PORT || 5000;
 
-console.log("Connecting to MongoDB:", process.env.MONGO_URI)
+console.log("Connecting to MongoDB:", process.env.MONGO_URI) 
+app.use(cors({
+  origin: 'https://testing.scissorsproperties.com', // or use '*' for all (less secure)
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
 
 
 // ✅ Connect to MongoDB
