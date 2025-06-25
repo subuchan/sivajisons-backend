@@ -24,8 +24,6 @@ mongoose.connect( process.env.MONGO_URI, {
   useUnifiedTopology: true,
   tls: true
 });
-.then(() => console.log("✅ MongoDB connected"))
-.catch((err) => console.error("❌ MongoDB connection failed:", err.message));
 
 // ✅ Mongoose Schema
 const ApplicationSchema = new mongoose.Schema({
